@@ -6,8 +6,46 @@
     <title>Formularios</title>
   </head>
   <body>
-    <form action="/">
-      <button type="submit">Submit</button>
-    </form>
+    <main>
+      <h2>El club viejuner</h2>
+      <form action="/">
+        <div>
+          <label for="name">Nombre:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            max="16"
+            placeholder="Manolo"
+            autofocus
+          />
+        </div>
+        <div>
+          <label for="surnames">Apellidos:</label>
+          <input
+            type="text"
+            name="surnames"
+            id="surnames"
+            max="40"
+            placeholder="Martínez García"
+          />
+        </div>
+        <div>
+          <label for="age">Edad:</label>
+          <input type="number" name="age" id="age" min="60" placeholder="60" />
+        </div>
+        <div>
+          Sexo:
+          <input type="radio" name="sex" id="male" value="Male" />
+          <label for="male">Hombre</label>
+          <input type="radio" name="sex" id="female" value="Female" />
+          <label for="female">Mujer</label>
+          <input type="radio" name="sex" id="nonbinary" value="NonBinary" />
+          <label for="nonbinary">No Binario</label>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
   </body>
 </html>
