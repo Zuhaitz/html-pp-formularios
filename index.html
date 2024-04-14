@@ -3,17 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Formularios</title>
   </head>
   <body>
     <main>
-      <section>
-        <h2>El club viejuner</h2>
-        <form action="/">
+      <section class="container">
+        <h1>El club viejuner</h1>
+        <form action="">
           <section>
             <div>
-              <label for="name">Nombre:</label>
+              <label for="name" class="input-label">Nombre:</label>
               <input
+                class="text-input"
                 type="text"
                 name="name"
                 id="name"
@@ -23,8 +25,9 @@
               />
             </div>
             <div>
-              <label for="surnames">Apellidos:</label>
+              <label for="surnames" class="input-label">Apellidos:</label>
               <input
+                class="text-input"
                 type="text"
                 name="surnames"
                 id="surnames"
@@ -33,7 +36,7 @@
               />
             </div>
             <div>
-              <label for="age">Edad:</label>
+              <label for="age" class="input-label">Edad:</label>
               <input
                 type="number"
                 name="age"
@@ -42,14 +45,21 @@
                 placeholder="60"
               />
             </div>
-            <div>
-              Sexo:
-              <input type="radio" name="sex" id="male" value="Male" />
-              <label for="male">Hombre</label>
-              <input type="radio" name="sex" id="female" value="Female" />
-              <label for="female">Mujer</label>
-              <input type="radio" name="sex" id="nonbinary" value="NonBinary" />
-              <label for="nonbinary">No Binario</label>
+            <div class="gender-input">
+              <span class="input-label"> Sexo: </span>
+              <div class="flex-row">
+                <input type="radio" name="sex" id="male" value="Male" />
+                <label for="male">Hombre</label>
+                <input type="radio" name="sex" id="female" value="Female" />
+                <label for="female">Mujer</label>
+                <input
+                  type="radio"
+                  name="sex"
+                  id="nonbinary"
+                  value="NonBinary"
+                />
+                <label for="nonbinary">No Binario</label>
+              </div>
             </div>
 
             <div>
@@ -57,17 +67,26 @@
               <label for="yes">Me siento viejuner?</label>
             </div>
 
-            <div>
-              Escribe algo sobre tí:
-              <textarea name="about" id="about" cols="30" rows="10"></textarea>
+            <div class="about-input">
+              <span class="input-label"> Escribe algo sobre tí: </span>
+              <textarea
+                class="text-input"
+                name="about"
+                id="about"
+                cols="30"
+                rows="10"
+              ></textarea>
             </div>
           </section>
 
           <section>
-            Tus circunstancias:
+            <h2>Tus circunstancias:</h2>
             <div>
-              <label for="email">Correo electrónico: </label>
+              <label for="email" class="input-label"
+                >Correo electrónico:
+              </label>
               <input
+                class="text-input"
                 type="email"
                 name="email"
                 id="email"
@@ -76,8 +95,9 @@
             </div>
 
             <div>
-              <label for="phone">Teléfono: </label>
+              <label for="phone" class="input-label">Teléfono: </label>
               <input
+                class="text-input"
                 type="tel"
                 name="phone"
                 id="phone"
@@ -86,8 +106,13 @@
             </div>
           </section>
 
-          <button type="submit">Submit</button>
+          <div class="center">
+            <button type="submit" class="btn">Submit</button>
+          </div>
         </form>
+        <a href="./ladronzuelos.html" class="center">
+          Ir a la sección de ladronzuelos
+        </a>
       </section>
     </main>
   </body>
