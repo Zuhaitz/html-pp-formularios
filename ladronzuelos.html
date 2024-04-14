@@ -12,89 +12,95 @@
         <form action="">
           <h1>Los ladronzuelos de bicicletas</h1>
 
-          <div>
-            <label for="day" class="input-label">Día: </label>
-            <input
-              type="date"
-              name="day"
-              id="day"
-              class="text-input"
-              autofocus
-            />
-          </div>
+          <fieldset>
+            <legend>Información horaria</legend>
+            <div>
+              <label for="day" class="input-label">Día: </label>
+              <input
+                type="date"
+                name="day"
+                id="day"
+                class="text-input"
+                autofocus
+              />
+            </div>
 
-          <div>
-            <label for="hour" class="input-label">Hora: </label>
-            <input type="time" name="hour" id="hour" class="text-input" />
-          </div>
+            <div>
+              <label for="hour" class="input-label">Hora: </label>
+              <input type="time" name="hour" id="hour" class="text-input" />
+            </div>
+          </fieldset>
 
-          <div>
-            <label for="color" class="input-label"
-              >Color de la bicicleta:
-            </label>
-            <input type="color" name="color" id="color" value="#FF0000" />
-          </div>
+          <fieldset>
+            <legend>Datos bicicleta</legend>
+            <div>
+              <label for="color" class="input-label"
+                >Color de la bicicleta:
+              </label>
+              <input type="color" name="color" id="color" value="#FF0000" />
+            </div>
 
-          <div class="center-content">
-            <label for="price" class="input-label">Rango de precio: </label>
-            <input
-              type="range"
-              value="800"
-              min="800"
-              max="2600"
-              oninput="rangeValue.innerText = this.value"
-            />
-            $<span id="rangeValue">100</span>
-          </div>
+            <div class="center-content">
+              <label for="price" class="input-label">Rango de precio: </label>
+              <input
+                type="range"
+                value="800"
+                min="800"
+                max="2600"
+                oninput="rangeValue.innerText = this.value"
+              />
+              $<span id="rangeValue">800</span>
+            </div>
 
-          <div>
-            <label for="type" class="input-label">Tipo de bicicleta: </label>
-            <select name="type">
-              <option value="Paseo" selected>Paseo</option>
-              <option value="Montaña">Montaña</option>
-              <option value="Carreras">Carreras</option>
-            </select>
-          </div>
+            <div>
+              <label for="type" class="input-label">Tipo de bicicleta: </label>
+              <select name="type">
+                <option value="Paseo" selected>Paseo</option>
+                <option value="Montaña">Montaña</option>
+                <option value="Carreras">Carreras</option>
+              </select>
+            </div>
 
-          <div class="about-input">
-            <label for="accesories" class="input-label">Accesorios: </label>
-            <select name="accesories" multiple>
-              <option value="Ruedines" selected>Ruedines</option>
-              <option value="Pegatinas">Pegatinas</option>
-              <option value="Cestita">Cestita</option>
-              <option value="BombaDeAire">Bomba de aire</option>
-              <option value="Timbre">Timbre</option>
-              <option value="Foco">Foco</option>
-            </select>
-          </div>
+            <div class="about-input">
+              <label for="accesories" class="input-label">Accesorios: </label>
+              <select name="accesories" multiple>
+                <option value="Ruedines" selected>Ruedines</option>
+                <option value="Pegatinas">Pegatinas</option>
+                <option value="Cestita">Cestita</option>
+                <option value="BombaDeAire">Bomba de aire</option>
+                <option value="Timbre">Timbre</option>
+                <option value="Foco">Foco</option>
+              </select>
+            </div>
 
-          <div>
-            <label for="marca" class="input-label">¿Qué marca era? </label>
-            <input list="marcas" name="marca" />
-            <datalist id="marcas">
-              <option value="specialized"></option>
-              <option value="trek"></option>
-              <option value="merida"></option>
-              <option value="scott"></option>
-              <option value="giant"></option>
-              <option value="cube"></option>
-              <option value="lapierre"></option>
-              <option value="orbea"></option>
-              <option value="cannondale"></option>
-              <option value="bmc"></option>
-              <option value="canyon"></option>
-              <option value="look"></option>
-              <option value="protek"></option>
-              <option value="megamo"></option>
-              <option value="pinarello"></option>
-              <option value="bianchi"></option>
-              <option value="bh"></option>
-              <option value="factor"></option>
-              <option value="ghost"></option>
-              <option value="cervélo"></option>
-              <option value="argon"></option>
-            </datalist>
-          </div>
+            <div>
+              <label for="marca" class="input-label">¿Qué marca era? </label>
+              <input list="marcas" name="marca" placeholder="merida" />
+              <datalist id="marcas">
+                <option value="specialized"></option>
+                <option value="trek"></option>
+                <option value="merida"></option>
+                <option value="scott"></option>
+                <option value="giant"></option>
+                <option value="cube"></option>
+                <option value="lapierre"></option>
+                <option value="orbea"></option>
+                <option value="cannondale"></option>
+                <option value="bmc"></option>
+                <option value="canyon"></option>
+                <option value="look"></option>
+                <option value="protek"></option>
+                <option value="megamo"></option>
+                <option value="pinarello"></option>
+                <option value="bianchi"></option>
+                <option value="bh"></option>
+                <option value="factor"></option>
+                <option value="ghost"></option>
+                <option value="cervélo"></option>
+                <option value="argon"></option>
+              </datalist>
+            </div>
+          </fieldset>
 
           <div class="center">
             <button type="reset" class="reset">Reset</button>

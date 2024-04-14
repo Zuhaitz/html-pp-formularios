@@ -11,7 +11,8 @@
       <section class="container">
         <h1>El club viejuner</h1>
         <form action="">
-          <section>
+          <fieldset>
+            <legend>Información personal</legend>
             <div>
               <label for="name" class="input-label">Nombre:</label>
               <input
@@ -21,6 +22,7 @@
                 id="name"
                 max="16"
                 placeholder="Manolo"
+                tabindex="1"
                 autofocus
               />
             </div>
@@ -33,8 +35,10 @@
                 id="surnames"
                 max="40"
                 placeholder="Martínez García"
+                tabindex="3"
               />
             </div>
+
             <div>
               <label for="age" class="input-label">Edad:</label>
               <input
@@ -43,6 +47,7 @@
                 id="age"
                 min="60"
                 placeholder="60"
+                tabindex="2"
               />
             </div>
             <div class="gender-input">
@@ -77,10 +82,10 @@
                 rows="10"
               ></textarea>
             </div>
-          </section>
+          </fieldset>
 
-          <section>
-            <h2>Tus circunstancias:</h2>
+          <fieldset>
+            <legend>Tus circunstancias:</legend>
             <div>
               <label for="email" class="input-label"
                 >Correo electrónico:
@@ -104,9 +109,9 @@
                 placeholder="644 09 09 09"
               />
             </div>
-          </section>
-
+          </fieldset>
           <div class="center">
+            <button type="reset" class="reset">Reset</button>
             <button type="submit" class="btn">Submit</button>
           </div>
         </form>
